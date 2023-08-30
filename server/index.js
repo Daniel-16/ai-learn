@@ -21,7 +21,7 @@ mongoose
     useNewUrlParser: true,
   })
   .then(() => {
-    app.listen(5000, () => {
+    app.listen(port, () => {
       console.log(`Server started at ${port}`);
     });
   })
