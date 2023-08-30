@@ -3,7 +3,7 @@ import Image from "next/image";
 import hero from "../public/images/undraw_doctor_kw5l.png";
 import { ChangeEvent, useState } from "react";
 import SuccessModal from "./SuccessModal";
-import { log } from "console";
+import axios from "axios";
 
 const HeroSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,8 +34,20 @@ const HeroSection = () => {
           <form
             onSubmit={(e) => {
               e.preventDefault();
+              const postEmail = axios.post(
+                "https://healthcare-waitlist-api.onrender.com/",
+                {
+                  email,
+                },
+                {
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                }
+              );
               toggle();
               setEmail("");
+              console.log(postEmail);
             }}
             className="flex items-center justify-center border rounded-lg p-1"
           >
