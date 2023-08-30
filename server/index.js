@@ -16,7 +16,7 @@ app.use("/", router);
 const port = process.env.PORT || 5000;
 
 mongoose
-  .connect(process.env.MONGODB_URI_LOCAL, {
+  .connect(process.env.MONGODB_URI_PRODUCTION, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   })
