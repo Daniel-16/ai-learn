@@ -1,14 +1,18 @@
 "use client";
 import Image from "next/image";
 import hero from "../public/images/undraw_doctor_kw5l.png";
-import Link from "next/link";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import SuccessModal from "./SuccessModal";
+import { log } from "console";
 
 const HeroSection = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [email, setEmail] = useState<string>("");
   const toggle = () => {
     setIsOpen(!isOpen);
+  };
+  const handleEmail = (e: ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
   };
   return (
     <>
@@ -24,18 +28,6 @@ const HeroSection = () => {
             gets medical attention by connecting patients to doctors without
             needing to visit a hospital.
           </p>
-          {/* <Link
-            href="/signup"
-            className="px-7 py-3 w-full bg-indigo-700 text-white text-center rounded-md shadow-md block sm:w-auto hover:bg-indigo-800"
-          >
-            Get started
-          </Link>
-          <Link
-            href="#"
-            className="px-7 py-3 w-full bg-gray-700 text-gray-200 text-center rounded-md block sm:w-auto hover:bg-gray-800"
-          >
-            Try it out
-          </Link> */}
           <h3 className="text-indigo-700 text-3xl font-semibold">
             Join the waitlist to get notified when we launch
           </h3>
@@ -43,6 +35,7 @@ const HeroSection = () => {
             onSubmit={(e) => {
               e.preventDefault();
               toggle();
+              setEmail("");
             }}
             className="flex items-center justify-center border rounded-lg p-1"
           >
@@ -50,6 +43,8 @@ const HeroSection = () => {
               type="email"
               placeholder="Enter your email"
               className="text-gray-500 w-full p-2 outline-none"
+              onChange={handleEmail}
+              value={email}
               required
             />
             <button
