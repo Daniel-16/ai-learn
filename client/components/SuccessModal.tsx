@@ -24,7 +24,7 @@ const SuccessModal = ({
 }) => {
   //   const [state, setState] = useState(false);
   const [copyState, setCopyState] = useState(false);
-  const URLLink = "https://google.com";
+  const URLLink = "https://healthcare-waitlist.vercel.app/";
 
   // Copy the link
   const handleCopy = () => {
@@ -120,30 +120,33 @@ const SuccessModal = ({
                 Done
               </button> */}
               <WhatsappShareButton
-                url={"https://google.com"}
-                title={"Healthcare is a web-app"}
+                url={"https://healthcare-waitlist.vercel.app/"}
+                title={"Healthcare AI"}
                 separator=":: "
               >
                 <WhatsappIcon size={45} className="rounded-md" />
               </WhatsappShareButton>
-              <LinkedinShareButton url="https://google.com">
+              <LinkedinShareButton url="https://healthcare-waitlist.vercel.app/">
                 <LinkedinIcon size={45} className="rounded-md" />
               </LinkedinShareButton>
-              <FacebookMessengerShareButton url="https://google.com" appId="">
+              <FacebookMessengerShareButton
+                url="https://healthcare-waitlist.vercel.app/"
+                appId=""
+              >
                 <FacebookMessengerIcon size={45} className="rounded-md" />
               </FacebookMessengerShareButton>
-              <FacebookShareButton url="https://google.com">
+              <FacebookShareButton url="https://healthcare-waitlist.vercel.app/">
                 <FacebookIcon size={45} className="rounded-md" />
               </FacebookShareButton>
               <TwitterShareButton
-                url="https://google.com"
-                title="By leveraging AI technology, HealthCare is transforming the way patients gets medical attention by connecting patients to doctors without needing to visit a hospital."
+                url="https://healthcare-waitlist.vercel.app/"
+                title="By leveraging AI technology, HealthCare AI is transforming the way patients gets medical attention by connecting patients to doctors without needing to visit a hospital."
               >
                 <TwitterIcon size={45} className="rounded-md" />
               </TwitterShareButton>
               <EmailShareButton
-                url="https://google.com"
-                subject="Healthcare waitlist"
+                url="https://healthcare-waitlist.vercel.app/"
+                subject="Healthcare AI waitlist"
                 body="By leveraging AI technology, we are transforming the way patients gets medical attention by connecting patients to doctors without needing to visit a hospital."
               >
                 <EmailIcon size={45} className="rounded-md" />
