@@ -62,10 +62,6 @@ const SuccessModal = ({
                 <h4 className="text-lg font-medium text-gray-800">
                   Thank you for joining the waitlists!
                 </h4>
-                <p className="text-[15px] text-gray-600 mt-4">
-                  You can copy the link below or share to your social media
-                  accounts below
-                </p>
               </div>
               <button
                 className="p-2 text-gray-400 rounded-md hover:bg-gray-100"
@@ -153,6 +149,10 @@ const SuccessModal = ({
                 <EmailIcon size={45} className="rounded-md" />
               </EmailShareButton>
             </div>
+            <p className="text-[15px] text-gray-600 mt-4">
+              You can help us refer a friend by copying the link above or
+              directly sharing to other socials.
+            </p>
           </div>
         </div>
       </div>
