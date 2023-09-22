@@ -18,14 +18,7 @@ UserSchema.pre("save", async function (next) {
     next();
   } catch (error) {
     console.log(error);
-  }
-  // UserModel.findOne({ email }, (err, user) => {
-  //   if (user) {
-  //     const emailExists = new Error("Email is already in use");
-  //     return next(emailExists);
-  //   }
-  //   next();
-  // });
+ }
 });
 
 const UserModel = mongoose.model("user", UserSchema);
