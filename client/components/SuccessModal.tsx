@@ -24,7 +24,7 @@ const SuccessModal = ({
 }) => {
   //   const [state, setState] = useState(false);
   const [copyState, setCopyState] = useState(false);
-  const URLLink = "https://healthcare-waitlist.vercel.app/";
+  const URLLink = "https://ai-learn-three.vercel.app/";
 
   // Copy the link
   const handleCopy = () => {
@@ -120,34 +120,38 @@ const SuccessModal = ({
                 Done
               </button> */}
               <WhatsappShareButton
-                url={"https://healthcare-waitlist.vercel.app/"}
+                url={"https://ai-learn-three.vercel.app/"}
                 title={"Healthcare AI"}
                 separator=":: "
               >
                 <WhatsappIcon size={45} className="rounded-md" />
               </WhatsappShareButton>
-              <LinkedinShareButton url="https://healthcare-waitlist.vercel.app/">
+              <LinkedinShareButton url="https://ai-learn-three.vercel.app/">
                 <LinkedinIcon size={45} className="rounded-md" />
               </LinkedinShareButton>
               <FacebookMessengerShareButton
-                url="https://healthcare-waitlist.vercel.app/"
+                url="https://ai-learn-three.vercel.app/"
                 appId=""
               >
                 <FacebookMessengerIcon size={45} className="rounded-md" />
               </FacebookMessengerShareButton>
-              <FacebookShareButton url="https://healthcare-waitlist.vercel.app/">
+              <FacebookShareButton url="https://ai-learn-three.vercel.app/">
                 <FacebookIcon size={45} className="rounded-md" />
               </FacebookShareButton>
               <TwitterShareButton
-                url="https://healthcare-waitlist.vercel.app/"
-                title="By leveraging AI technology, HealthCare AI is transforming the way patients gets medical attention by connecting patients to doctors without needing to visit a hospital."
+                url="https://ai-learn-three.vercel.app/"
+                title="By leveraging AI technology, we are transforming the way students
+            learn from their handout by enabling them to actively learn and
+            engage with their materials."
               >
                 <TwitterIcon size={45} className="rounded-md" />
               </TwitterShareButton>
               <EmailShareButton
-                url="https://healthcare-waitlist.vercel.app/"
+                url="https://ai-learn-three.vercel.app/"
                 subject="Healthcare AI waitlist"
-                body="By leveraging AI technology, we are transforming the way patients gets medical attention by connecting patients to doctors without needing to visit a hospital."
+                body="By leveraging AI technology, we are transforming the way students
+            learn from their handout by enabling them to actively learn and
+            engage with their materials."
               >
                 <EmailIcon size={45} className="rounded-md" />
               </EmailShareButton>
