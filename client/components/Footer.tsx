@@ -16,10 +16,10 @@ const Footer = () => {
       </svg>
       <p className="font-bold text-center leading-relaxed">
         <Link href={"/"} className="hover:underline">
-          HealthCare AI.
+          AI Learn.
         </Link>{" "}
         <br />
-        Connecting Patients to Doctors through AI.
+        Enabling active learning through Artificial Intelligence
       </p>
       <p>&copy; {year} All rights reserved</p>
     </footer>
