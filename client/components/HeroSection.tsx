@@ -21,7 +21,7 @@ const HeroSection = () => {
     setLoading(true);
     try {
       const postedEmail = await axios.post(
-        "https://healthcare-waitlist-api.onrender.com/",
+        "https://ai-learn-5bec.onrender.com",
         {
           email,
         },
